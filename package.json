@@ -1,0 +1,40 @@
+{
+  "name": "shopsphere",
+  "version": "1.0.0",
+  "description": "ShopSphere – Modern E-Commerce Product Catalog. A full-stack capstone project.",
+  "main": "backend/server.js",
+  "scripts": {
+    "server": "node backend/server.js",
+    "server:dev": "node --watch backend/server.js",
+    "dev": "concurrently \"npm run server:dev\" \"npm run frontend:dev\"",
+    "frontend:dev": "cd frontend && npx -y live-server --port=3000 --no-browser",
+    "test": "jest --forceExit --detectOpenHandles",
+    "test:coverage": "jest --coverage --forceExit --detectOpenHandles",
+    "test:verbose": "jest --verbose --forceExit --detectOpenHandles",
+    "start": "node backend/server.js"
+  },
+  "keywords": [
+    "ecommerce",
+    "fullstack",
+    "nodejs",
+    "express",
+    "sqlite",
+    "capstone"
+  ],
+  "author": "Deva",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}

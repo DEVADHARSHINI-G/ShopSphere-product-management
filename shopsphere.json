@@ -1,0 +1,405 @@
+{
+  "tables": {
+    "users": [
+      {
+        "id": 1,
+        "role": "admin",
+        "created_at": "2026-06-19 17:22:54",
+        "name": "Admin",
+        "email": "admin@shopsphere.com",
+        "password": "$2a$10$PUXxF.F9B3Vpvk7jQLgqEejBr5XlX48Cp/X54wRHLfO1u.aO00EyO"
+      },
+      {
+        "id": 2,
+        "role": "user",
+        "created_at": "2026-06-19 17:22:54",
+        "name": "Deva",
+        "email": "deva@shopsphere.com",
+        "password": "$2a$10$kW.LfhAHI1UYGfOE.hxyR.PJgDVIYOjOlpVd5MrKkDiwNZ0t7Rkui"
+      },
+      {
+        "id": 3,
+        "role": "user",
+        "created_at": "2026-06-19 17:22:54",
+        "name": "John Doe",
+        "email": "john@example.com",
+        "password": "$2a$10$kW.LfhAHI1UYGfOE.hxyR.PJgDVIYOjOlpVd5MrKkDiwNZ0t7Rkui"
+      },
+      {
+        "id": 4,
+        "role": "user",
+        "created_at": "2026-06-19 17:22:54",
+        "name": "Jane Smith",
+        "email": "jane@example.com",
+        "password": "$2a$10$kW.LfhAHI1UYGfOE.hxyR.PJgDVIYOjOlpVd5MrKkDiwNZ0t7Rkui"
+      },
+      {
+        "id": 5,
+        "role": "user",
+        "created_at": "2026-06-19 17:22:54",
+        "name": "Test User",
+        "email": "testuser@test.com",
+        "password": "$2a$10$Ag9A/X8KBMKgio5J57HXHuTDhd3yKQIs40Xet.qYSUVlGkzb26Ip."
+      }
+    ],
+    "categories": [
+      {
+        "id": 1,
+        "created_at": "2026-06-19 17:22:54",
+        "name": "Electronics",
+        "description": "Latest gadgets and electronic devices",
+        "image": "https://images.unsplash.com/photo-1498049794561-7780e7231661?w=400"
+      },
+      {
+        "id": 2,
+        "created_at": "2026-06-19 17:22:54",
+        "name": "Fashion",
+        "description": "Trendy clothing and accessories",
+        "image": "https://images.unsplash.com/photo-1445205170230-053b83016050?w=400"
+      },
+      {
+        "id": 3,
+        "created_at": "2026-06-19 17:22:54",
+        "name": "Home & Living",
+        "description": "Beautiful home decor and furniture",
+        "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400"
+      },
+      {
+        "id": 4,
+        "created_at": "2026-06-19 17:22:54",
+        "name": "Sports & Fitness",
+        "description": "Equipment for an active lifestyle",
+        "image": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400"
+      },
+      {
+        "id": 5,
+        "created_at": "2026-06-19 17:22:54",
+        "name": "Books",
+        "description": "Best sellers and new releases",
+        "image": "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=400"
+      },
+      {
+        "id": 6,
+        "created_at": "2026-06-19 17:22:54",
+        "name": "Beauty & Health",
+        "description": "Skincare, makeup, and wellness products",
+        "image": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400"
+      }
+    ],
+    "products": [
+      {
+        "id": 1,
+        "stock": 47,
+        "rating": 4.8,
+        "created_at": "2026-06-19 17:22:54",
+        "name": "Wireless Noise-Cancelling Headphones",
+        "description": "Premium over-ear headphones with active noise cancellation, 30-hour battery life, and crystal-clear sound quality.",
+        "price": 299.99,
+        "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400",
+        "category_id": 1
+      },
+      {
+        "id": 2,
+        "stock": 25,
+        "rating": 4.9,
+        "created_at": "2026-06-19 17:22:54",
+        "name": "Ultra-Slim Laptop Pro",
+        "description": "Powerful 15-inch laptop with M2 chip, 16GB RAM, 512GB SSD. Perfect for professionals and creators.",
+        "price": 1299.99,
+        "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400",
+        "category_id": 1
+      },
+      {
+        "id": 3,
+        "stock": 100,
+        "rating": 4.6,
+        "created_at": "2026-06-19 17:22:54",
+        "name": "Smart Watch Series X",
+        "description": "Advanced smartwatch with health monitoring, GPS, and 5-day battery life. Water resistant to 50m.",
+        "price": 399.99,
+        "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400",
+        "category_id": 1
+      },
+      {
+        "id": 4,
+        "stock": 75,
+        "rating": 4.5,
+        "created_at": "2026-06-19 17:22:54",
+        "name": "4K Action Camera",
+        "description": "Compact waterproof action camera with 4K@60fps recording, image stabilization, and wide-angle lens.",
+        "price": 249.99,
+        "image": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=400",
+        "category_id": 1
+      },
+      {
+        "id": 5,
+        "stock": 200,
+        "rating": 4.4,
+        "created_at": "2026-06-19 17:22:54",
+        "name": "Bluetooth Portable Speaker",
+        "description": "Powerful portable speaker with 360° surround sound, waterproof design, and 20-hour playtime.",
+        "price": 79.99,
+        "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400",
+        "category_id": 1
+      },
+      {
+        "id": 6,
+        "stock": 40,
+        "rating": 4.7,
+        "created_at": "2026-06-19 17:22:54",
+        "name": "Premium Leather Jacket",
+        "description": "Handcrafted genuine leather jacket with quilted lining. Timeless style that never goes out of fashion.",
+        "price": 189.99,
+        "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400",
+        "category_id": 2
+      },
+      {
+        "id": 7,
+        "stock": 80,
+        "rating": 4.3,
+        "created_at": "2026-06-19 17:22:54",
+        "name": "Designer Sunglasses",
+        "description": "UV400 polarized sunglasses with titanium frame. Lightweight and elegant for everyday wear.",
+        "price": 129.99,
+        "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400",
+        "category_id": 2
+      },
+      {
+        "id": 8,
+        "stock": 150,
+        "rating": 4.5,
+        "created_at": "2026-06-19 17:22:54",
+        "name": "Classic Canvas Sneakers",
+        "description": "Versatile canvas sneakers with cushioned insole and durable rubber outsole. Available in 8 colors.",
+        "price": 59.99,
+        "image": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=400",
+        "category_id": 2
+      },
+      {
+        "id": 9,
+        "stock": 30,
+        "rating": 4.8,
+        "created_at": "2026-06-19 17:22:54",
+        "name": "Silk Evening Dress",
+        "description": "Elegant floor-length silk dress with a modern silhouette. Perfect for formal occasions and galas.",
+        "price": 249.99,
+        "image": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400",
+        "category_id": 2
+      },
+      {
+        "id": 10,
+        "stock": 120,
+        "rating": 4.6,
+        "created_at": "2026-06-19 17:22:54",
+        "name": "Minimalist Desk Lamp",
+        "description": "Adjustable LED desk lamp with wireless charging base, touch controls, and 5 brightness levels.",
+        "price": 69.99,
+        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400",
+        "category_id": 3
+      },
+      {
+        "id": 11,
+        "stock": 200,
+        "rating": 4.4,
+        "created_at": "2026-06-19 17:22:54",
+        "name": "Luxury Scented Candle Set",
+        "description": "Set of 4 hand-poured soy candles with premium fragrances. Each candle burns for 45+ hours.",
+        "price": 44.99,
+        "image": "https://images.unsplash.com/photo-1602028915047-37269d1a73f7?w=400",
+        "category_id": 3
+      },
+      {
+        "id": 12,
+        "stock": 35,
+        "rating": 4.7,
+        "created_at": "2026-06-19 17:22:54",
+        "name": "Ergonomic Office Chair",
+        "description": "Premium mesh office chair with lumbar support, adjustable armrests, and breathable design.",
+        "price": 449.99,
+        "image": "https://images.unsplash.com/photo-1592078615290-033ee584e267?w=400",
+        "category_id": 3
+      },
+      {
+        "id": 13,
+        "stock": 90,
+        "rating": 4.2,
+        "created_at": "2026-06-19 17:22:54",
+        "name": "Ceramic Plant Pots Set",
+        "description": "Set of 3 modern ceramic planters with bamboo saucers. Perfect for succulents and small plants.",
+        "price": 34.99,
+        "image": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=400",
+        "category_id": 3
+      },
+      {
+        "id": 14,
+        "stock": 150,
+        "rating": 4.5,
+        "created_at": "2026-06-19 17:22:54",
+        "name": "Premium Yoga Mat",
+        "description": "Extra-thick 6mm non-slip yoga mat with alignment markers and carrying strap. Eco-friendly materials.",
+        "price": 49.99,
+        "image": "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=400",
+        "category_id": 4
+      },
+      {
+        "id": 15,
+        "stock": 45,
+        "rating": 4.8,
+        "created_at": "2026-06-19 17:22:54",
+        "name": "Adjustable Dumbbell Set",
+        "description": "Space-saving adjustable dumbbells from 5-52.5 lbs. Quick-change weight system for efficient workouts.",
+        "price": 349.99,
+        "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400",
+        "category_id": 4
+      },
+      {
+        "id": 16,
+        "stock": 99,
+        "rating": 4.6,
+        "created_at": "2026-06-19 17:22:54",
+        "name": "Running Shoes Ultra",
+        "description": "Lightweight running shoes with responsive cushioning, breathable mesh upper, and carbon fiber plate.",
+        "price": 159.99,
+        "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400",
+        "category_id": 4
+      },
+      {
+        "id": 17,
+        "stock": 300,
+        "rating": 4.3,
+        "created_at": "2026-06-19 17:22:54",
+        "name": "The Art of Innovation",
+        "description": "A bestselling guide to creative thinking and problem-solving in business and life.",
+        "price": 24.99,
+        "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+        "category_id": 5
+      },
+      {
+        "id": 18,
+        "stock": 250,
+        "rating": 4.7,
+        "created_at": "2026-06-19 17:22:54",
+        "name": "Modern Web Development",
+        "description": "Comprehensive guide covering HTML5, CSS3, JavaScript, React, Node.js, and cloud deployment.",
+        "price": 39.99,
+        "image": "https://images.unsplash.com/photo-1532012197267-da84d127e765?w=400",
+        "category_id": 5
+      },
+      {
+        "id": 19,
+        "stock": 180,
+        "rating": 4.5,
+        "created_at": "2026-06-19 17:22:54",
+        "name": "Digital Photography Masterclass",
+        "description": "From beginner to professional — master composition, lighting, editing, and storytelling through images.",
+        "price": 29.99,
+        "image": "https://images.unsplash.com/photo-1553729459-afe8f2e2ed65?w=400",
+        "category_id": 5
+      },
+      {
+        "id": 20,
+        "stock": 80,
+        "rating": 4.6,
+        "created_at": "2026-06-19 17:22:54",
+        "name": "Luxury Skincare Set",
+        "description": "Complete skincare routine: cleanser, toner, serum, moisturizer. Formulated with hyaluronic acid and vitamin C.",
+        "price": 89.99,
+        "image": "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=400",
+        "category_id": 6
+      },
+      {
+        "id": 21,
+        "stock": 120,
+        "rating": 4.4,
+        "created_at": "2026-06-19 17:22:54",
+        "name": "Essential Oil Diffuser",
+        "description": "Ultrasonic aromatherapy diffuser with 7 LED mood lights and auto shut-off. Covers up to 300 sq ft.",
+        "price": 39.99,
+        "image": "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400",
+        "category_id": 6
+      },
+      {
+        "id": 22,
+        "stock": 65,
+        "rating": 4.5,
+        "created_at": "2026-06-19 17:22:54",
+        "name": "Professional Hair Dryer",
+        "description": "Ionic hair dryer with 3 heat settings, cool shot button, and concentrator nozzle. Reduces drying time by 50%.",
+        "price": 79.99,
+        "image": "https://images.unsplash.com/photo-1522338242992-e1a54571a9f7?w=400",
+        "category_id": 6
+      }
+    ],
+    "cart": [],
+    "orders": [
+      {
+        "id": 1,
+        "status": "delivered",
+        "created_at": "2026-06-19 17:22:54",
+        "user_id": 2,
+        "items": "[{\"product_id\":1,\"name\":\"Wireless Noise-Cancelling Headphones\",\"quantity\":1,\"price\":299.99},{\"product_id\":3,\"name\":\"Smart Watch Series X\",\"quantity\":1,\"price\":399.99}]",
+        "total": 699.98
+      },
+      {
+        "id": 2,
+        "status": "shipped",
+        "created_at": "2026-06-19 17:22:54",
+        "user_id": 3,
+        "items": "[{\"product_id\":6,\"name\":\"Premium Leather Jacket\",\"quantity\":1,\"price\":189.99}]",
+        "total": 189.99
+      },
+      {
+        "id": 3,
+        "status": "processing",
+        "created_at": "2026-06-19 17:22:54",
+        "user_id": 2,
+        "items": "[{\"product_id\":10,\"name\":\"Minimalist Desk Lamp\",\"quantity\":2,\"price\":69.99},{\"product_id\":11,\"name\":\"Luxury Scented Candle Set\",\"quantity\":1,\"price\":44.99}]",
+        "total": 184.97
+      },
+      {
+        "id": 4,
+        "status": "pending",
+        "created_at": "2026-06-19 17:22:55",
+        "user_id": 5,
+        "items": "[{\"product_id\":1,\"name\":\"Wireless Noise-Cancelling Headphones\",\"quantity\":3,\"price\":299.99}]",
+        "total": 899.97,
+        "shipping_address": "123 Test St"
+      },
+      {
+        "id": 5,
+        "status": "pending",
+        "created_at": "2026-06-19 17:28:45",
+        "user_id": 1,
+        "items": "[{\"product_id\":16,\"name\":\"Running Shoes Ultra\",\"quantity\":1,\"price\":159.99}]",
+        "total": 159.99,
+        "shipping_address": ""
+      }
+    ],
+    "contact_messages": [
+      {
+        "id": 1,
+        "created_at": "2026-06-19 17:22:55",
+        "name": "Test User",
+        "email": "test@test.com",
+        "subject": "Test Subject",
+        "message": "This is a test message."
+      },
+      {
+        "id": 2,
+        "created_at": "2026-06-19 17:30:46",
+        "name": "Test User",
+        "email": "testuser@shopsphere.com",
+        "subject": "Question about product availability",
+        "message": "Hello, is the Smart Watch Series X currently in stock? Thank you!"
+      }
+    ]
+  },
+  "counters": {
+    "users": 5,
+    "categories": 7,
+    "products": 23,
+    "cart": 2,
+    "orders": 5,
+    "contact_messages": 2
+  }
+}
