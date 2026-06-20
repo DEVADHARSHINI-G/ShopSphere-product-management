@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: shopsphere-api
+    name: shopsphere
     env: node
     plan: free
     buildCommand: npm install
@@ -14,17 +14,5 @@ services:
         value: 7d
       - key: PORT
         value: 5000
-
-  - type: web
-    name: shopsphere-frontend
-    env: static
-    buildCommand: echo "Static site"
-    staticPublishPath: ./frontend
-    headers:
-      - path: /*
-        name: X-Frame-Options
-        value: DENY
-    routes:
-      - type: rewrite
-        source: /*
-        destination: /index.html
+      - key: FRONTEND_URL
+        value: https://shopsphere.onrender.com
