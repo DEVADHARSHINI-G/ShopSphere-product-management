@@ -336,27 +336,52 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-links {
   display: flex;
   align-items: center;
-  gap: var(--space-xs);
+  gap: var(--space-sm);
 }
 
 .nav-link {
-  padding: var(--space-sm) var(--space-md);
+  padding: 8px 16px;
   color: var(--text-secondary);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 500;
   border-radius: var(--radius-sm);
-  transition: all var(--transition-fast);
+  transition: all var(--transition-normal);
   position: relative;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-link i {
+  font-size: 0.8rem;
+  transition: all var(--transition-fast);
 }
 
 .nav-link:hover {
   color: var(--text-primary);
-  background: var(--bg-glass);
+  background: rgba(255, 20, 147, 0.08);
+  border-color: rgba(255, 20, 147, 0.25);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 20, 147, 0.15);
+}
+
+.nav-link:hover i {
+  color: var(--color-primary);
 }
 
 .nav-link.active {
   color: var(--color-primary);
-  background: var(--color-primary-subtle);
+  background: rgba(255, 20, 147, 0.12);
+  border-color: rgba(255, 20, 147, 0.4);
+  box-shadow: 0 0 15px rgba(255, 20, 147, 0.2), inset 0 0 15px rgba(255, 20, 147, 0.05);
+}
+
+.nav-link.active i {
+  color: var(--color-primary-light);
 }
 
 .nav-link.active::after {
@@ -365,10 +390,11 @@ h1, h2, h3, h4, h5, h6 {
   bottom: -1px;
   left: 50%;
   transform: translateX(-50%);
-  width: 20px;
+  width: 60%;
   height: 2px;
-  background: var(--color-primary);
+  background: var(--gradient-primary);
   border-radius: 1px;
+  box-shadow: 0 0 8px rgba(255, 20, 147, 0.5);
 }
 
 .navbar-actions {
@@ -2045,11 +2071,15 @@ select.form-input {
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     flex-direction: column;
-    padding: var(--space-xl);
+    padding: var(--space-lg) var(--space-xl);
     gap: var(--space-sm);
     transform: translateX(100%);
     transition: transform var(--transition-normal);
+    z-index: 999;
+    overflow-y: auto;
   }
 
   .navbar-links.open {
@@ -2058,8 +2088,43 @@ select.form-input {
 
   .nav-link {
     width: 100%;
-    padding: var(--space-md);
+    padding: 14px 20px;
     font-size: 1rem;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all var(--transition-normal);
+  }
+
+  .nav-link i {
+    font-size: 1rem;
+    width: 24px;
+    text-align: center;
+    color: var(--color-primary);
+  }
+
+  .nav-link:hover,
+  .nav-link:active {
+    background: rgba(255, 20, 147, 0.12);
+    border-color: rgba(255, 20, 147, 0.35);
+    color: var(--text-primary);
+    transform: none;
+    box-shadow: 0 0 15px rgba(255, 20, 147, 0.15);
+  }
+
+  .nav-link.active {
+    background: rgba(255, 20, 147, 0.15);
+    border-color: rgba(255, 20, 147, 0.5);
+    color: var(--color-primary);
+    box-shadow: 0 0 20px rgba(255, 20, 147, 0.2), inset 0 0 20px rgba(255, 20, 147, 0.05);
+  }
+
+  .nav-link.active::after {
+    display: none;
   }
 
   .hero h1 {
