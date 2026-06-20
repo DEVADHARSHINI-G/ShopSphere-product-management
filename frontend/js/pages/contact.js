@@ -103,7 +103,31 @@ const ContactPage = {
     btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
 
     try {
+      // 1. Save to database via backend API
       await Api.contact.submit(data);
+
+      // 2. Send email notification via FormSubmit.co (directly from browser)
+      try {
+        await fetch('https://formsubmit.co/ajax/devapapa64@gmail.com', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            _subject: `🛍️ ShopSphere Contact: ${data.subject}`,
+            Name: data.name,
+            Email: data.email,
+            Subject: data.subject,
+            Message: data.message,
+            _template: 'table',
+            _captcha: 'false'
+          })
+        });
+      } catch (emailErr) {
+        console.log('Email notification skipped:', emailErr.message);
+      }
+
       Toast.success('Message sent successfully! We\'ll get back to you soon. 🎉');
       document.getElementById('contact-form').reset();
     } catch (error) {
