@@ -2065,11 +2065,11 @@ select.form-input {
   .hamburger { display: flex; }
 
   .navbar-links {
-    position: fixed;
+    position: absolute;
     top: var(--navbar-height);
     left: 0;
     right: 0;
-    bottom: 0;
+    height: calc(100vh - var(--navbar-height));
     background: rgba(0, 0, 0, 0.98);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
